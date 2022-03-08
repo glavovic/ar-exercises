@@ -10,6 +10,7 @@ puts "----------"
 
 # Your code goes here ...
 
-pp Store.sum(:annual_revenue)
-pp Store.average(:annual_revenue).to_i
-pp Store.where('annual_revenue > 1000000').count
+@store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
+@store1.employees.create(first_name: "Tom", last_name: "Cruise", hourly_rate: 40)
+@store2.employees.create(first_name: "John", last_name: "Poop", hourly_rate: 40)
+@store2.employees.create(first_name: "Peeper", last_name: "Hole", hourly_rate: 100)
